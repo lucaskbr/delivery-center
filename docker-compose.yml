@@ -8,7 +8,7 @@ services:
     environment:
       POSTGRES_USER: docker
       POSTGRES_PASSWORD: docker
-      POSTGRES_DB: deliverycenter
+      POSTGRES_DB: delivery
       PG_DATA: /var/lib/postgresql/data
   web:
     container_name: web
