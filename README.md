@@ -12,6 +12,8 @@ cd delivery-center
 docker-compose up --build
 ```
 
+### :nail_care: [Requirements](https://github.com/lucaskbr/delivery-center/blob/master/REQUIREMENTS.md)
+
 ### Routes
 
 | METHOD | URI |
