@@ -1,32 +1,27 @@
 # Teste de Dev Backend usando Ruby!
 
-O objetivo deste teste Ã© avaliar a organizaÃ§Ã£o do seu cÃ³digo, e como vocÃª estrutura uma soluÃ§Ã£o simples e eficiente baseada em requisitos simples.
+O objetivo deste teste é avaliar a organização do seu código, e como você estrutura uma solução simples e eficiente baseada em requisitos simples.
 
 ## Caso
 
-O Delivery Center estÃ¡ em plena expansÃ£o de suas operaÃ§Ãµes pelo Brasil, com planos audaciosos de operar nas maiores capitais ainda em 2019.
-Um dos passos dessa expansÃ£o Ã© ampliar a captaÃ§Ã£o de pedidos de diversos canais, sejam eles de `food`, `goods`, `FMCG`, `services`, entre outros.
-O mais recente movimento para alcanÃ§ar este objetivo Ã© a integraÃ§Ã£o a um dos maiores marketplaces do paÃ­s. Esta integraÃ§Ã£o permitirÃ¡ captar pedidos dos nossos lojistas que operam neste canal
-e operÃ¡-los em nossa estrutura logÃ­stica, entregando pedidos em `same hour / same day`.
+O Delivery Center está em plena expansão de suas operações pelo Brasil, com planos audaciosos de operar nas maiores capitais ainda em 2019. Um dos passos dessa expansão é ampliar a captação de pedidos de diversos canais, sejam eles de food, goods, FMCG, services, entre outros. O mais recente movimento para alcançar este objetivo é a integração a um dos maiores marketplaces do país. Esta integração permitirá captar pedidos dos nossos lojistas que operam neste canal e operá-los em nossa estrutura logística, entregando pedidos em same hour / same day.
 
-Para viabilizar esta integraÃ§Ã£o, um dos passos importantes Ã© realizar o `parsing` dos dados que vÃªm da API deste canal para a nossa estrutura, garantindo que
-a nossa operaÃ§Ã£o irÃ¡ receber de forma correta e clara as informaÃ§Ãµes necessÃ¡rias para entregar o pedido na casa do cliente, no endereÃ§o correto, para o cliente correto,
-com clareza dos valores a serem pagos, formas de pagamento, entre outras informaÃ§Ãµes.
+Para viabilizar esta integração, um dos passos importantes é realizar o parsing dos dados que vêm da API deste canal para a nossa estrutura, garantindo que a nossa operação irá receber de forma correta e clara as informações necessárias para entregar o pedido na casa do cliente, no endereço correto, para o cliente correto, com clareza dos valores a serem pagos, formas de pagamento, entre outras informações.
 
-Vale ressaltar que sem as informaÃ§Ãµes corretas a operaÃ§Ã£o do Delivery Center pode ter prejuÃ­zos no envio, gerando custos extras de envio e insatisfaÃ§Ã£o do cliente.
+Vale ressaltar que sem as informações corretas a operação do Delivery Center pode ter prejuízos no envio, gerando custos extras de envio e insatisfação do cliente.
 
-## InformaÃ§Ãµes Complementares
+## Informações Complementares
 
-O `JSON` a seguir representa um payload com dados fictÃ­cios de um pedido de compra de alguns produtos por um cliente.
+O `JSON` a seguir representa um payload com dados fictícios de um pedido de compra de alguns produtos por um cliente.
 
-- Utilizar a linguagem Ruby, mas pode escolher qualquer framework / libs (gems) que quiser para auxiliar no desenvolvimento, como, por exemplo: Rails, Sinatra, Padrino, etc. Se preferir, pode nÃ£o usar nenhum. Essa escolha nÃ£o irÃ¡ influenciar na avaliaÃ§Ã£o.
+- Utilizar a linguagem Ruby, mas pode escolher qualquer framework / libs (gems) que quiser para auxiliar no desenvolvimento, como, por exemplo: Rails, Sinatra, Padrino, etc. Se preferir, pode não usar nenhum. Essa escolha não irá influenciar na avaliação.
 - Fazer um parse do **Payload** abaixo.
-- Enviar para uma API REST (https://delivery-center-recruitment-ap.herokuapp.com/), no formato descrito no item **Processamento**, que farÃ¡ algumas validaÃ§Ãµes e retornarÃ¡ o resultado.
+- Enviar para uma API REST (https://delivery-center-recruitment-ap.herokuapp.com/), no formato descrito no item Processamento, que fará algumas validações e retornará o resultado.
 - Enviar com o Header 'X-Sent' com a data/hora atual no formato: 09h25 - 24/10/19.
-- **(Opcional)** Registrar os dados do pedido em um banco de dados
-  - Nesse caso vocÃª deve tambÃ©m incluir no seu cÃ³digo o schema do banco de dados (se utilizar Rails, o arquivo `schema.rb` Ã© suficiente).
-- Deixar o cÃ³digo disponÃ­vel em algum repositÃ³rio pÃºblico (github, bitbucket, etc...)
-- Enviar o link do repositÃ³rio para o e-mail **testes.tech@deliverycenter.com**
+- (Opcional) Registrar os dados do pedido em um banco de dados
+  - Nesse caso você deve também incluir no seu código o schema do banco de dados (se utilizar Rails, o arquivo schema.rb é suficiente).
+- Deixar o código disponível em algum repositório público (github, bitbucket, etc...)
+- Enviar o link do repositório para o e-mail testes.tech@deliverycenter.com
 
 ## Payload
 
@@ -86,7 +81,7 @@ O `JSON` a seguir representa um payload com dados fictÃ­cios de um pedido de c
         "name": "Cidade de Testes"
       },
       "state": {
-        "name": "SÃ£o Paulo"
+        "name": "São Paulo"
       },
       "country": {
         "id": "BR",
@@ -124,9 +119,9 @@ O `JSON` a seguir representa um payload com dados fictÃ­cios de um pedido de c
 
 Abaixo um exemplo do payload esperado, casando com os dados informados no payload acima.
 
-- **Todos os campos sÃ£o obrigatÃ³rios**:
-- Caso ocorra algum erro, os mesmos deverÃ£o ser tratados.
-- NÃ£o Ã© necessÃ¡rio o desenvolvimento de uma interface grÃ¡fica.
+- **Todos os campos são obrigatórios:**:
+- Caso ocorra algum erro, os mesmos deverão ser tratados.
+- Não é necessário o desenvolvimento de uma interface gráfica.
 
 ```JSON
 {
