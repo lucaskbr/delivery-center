@@ -16,7 +16,10 @@ class SendOrderToDeliveryService
     body[:items] = @items[:data].map { |child| child[:attributes] }
     body[:customer] = @customer[:data][:attributes]
 
-    response = RestClient.post(URL, body.to_json) { |response, request, result|
+    current_time = Time.now.strftime('%Hh%M - %e/%m/%y')
+    headers = {'X-Sent' => current_time}
+
+    response = RestClient.post(URL, body.to_json, headers) { |response, request, result|
       return response
     }
     
